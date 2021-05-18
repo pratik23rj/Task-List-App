@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Task List App</title>
+</head>
+
+<body>
+    <div class="text-center">
+        <h1 class="sm:text-4xl font-semibold sm:m-16 m-12 text-3xl"> Task List App </h1>
+    </div>
+
+    <div>
+        <form id="task-form"
+        class="flex justify-center items-center my-16 sm:flex-row flex-col ">
+            <input id="task"
+            type="text" class="bg-gray-100 text-xl py-2 px-4 border sm:w-6/12 sm:mx-12 w-4/5 " placeholder="New Task">
+            <input type="submit" value="Add Task" class="py-2 px-8 bg-blue-500 text-xl text-white hover:bg-blue-600 cursor-pointer border rounded-md sm:my-0 mt-8">
+        </form>
+    </div>
+
+
+   
+
+    <div class="flex justify-center items-center my-8  flex-col">
+        <ul id="lists" class="flex flex-col justify-center items-center my-2">
+             
+
+            
+            
+        </ul>
+
+        <a id="clear-tasks" href="#" class="bg-gray-800 hover:bg-gray-900 text-white py-2 px-8  text-xl text-white  cursor-pointer border rounded-md sm:my-0 mt-12" > Clear Tasks </a>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
